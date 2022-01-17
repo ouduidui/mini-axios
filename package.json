@@ -1,16 +1,16 @@
 {
-  "name": "axios",
+  "name": "mini-axios",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "grunt"
+    "dev": "webpack"
   },
-  "license": "MIT",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
-    "grunt": "^1.4.1",
-    "grunt-babel": "^8.0.0",
-    "grunt-contrib-clean": "^2.0.0",
-    "grunt-contrib-uglify": "^5.0.1",
-    "grunt-contrib-watch": "^1.1.0"
+    "webpack": "^4.44.2",
+    "webpack-cli": "^4.9.1"
   }
 }
