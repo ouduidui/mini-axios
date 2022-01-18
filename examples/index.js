@@ -21,8 +21,11 @@ axios.interceptors.response.use(
 );
 
 axios({
-  url: 'https://jsonplaceholder.typicode.com/todos/1',
-  method: 'GET'
+  url: 'https://jsonplaceholder.typicode.com/posts',
+  method: 'GET',
+  params: {
+    userId: 1
+  }
 })
   .then((res) => {
     console.log('get success：', res.data, res.status);

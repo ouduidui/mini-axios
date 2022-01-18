@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack",
-    "dev:node": "nodemon examples/cancel.js"
+    "dev": "webpack"
   },
   "keywords": [],
   "author": "",
@@ -13,5 +12,8 @@
   "devDependencies": {
     "webpack": "^4.44.2",
     "webpack-cli": "^4.9.1"
+  },
+  "dependencies": {
+    "qs": "^6.10.3"
   }
 }
