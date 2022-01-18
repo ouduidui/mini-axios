@@ -28,7 +28,7 @@ axios({
     console.log('get success：', res.data, res.status);
   })
   .catch((err) => {
-    console.log('post err', err);
+    console.log('get err', err);
   });
 
 axios({
