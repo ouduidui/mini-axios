@@ -1,5 +1,25 @@
 const axios = require('../index');
 
+axios.interceptors.request.use(
+  function (config) {
+    console.log('interceptors request', config);
+    return config;
+  },
+  function (error) {
+    return Promise.reject(error);
+  }
+);
+
+axios.interceptors.response.use(
+  function (response) {
+    console.log('interceptors response', response);
+    return response;
+  },
+  function (error) {
+    return Promise.reject(error);
+  }
+);
+
 axios({
   url: 'https://jsonplaceholder.typicode.com/todos/1',
   method: 'GET'
