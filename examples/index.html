@@ -15,7 +15,7 @@
           console.log('get success：', res.data, res.status);
         })
         .catch((err) => {
-          console.log('post err',err);
+          console.log('post err', err);
         });
 
       axios({
@@ -27,14 +27,14 @@
           userId: 1
         },
         headers: {
-          'Content-type': 'application/json',
+          'Content-type': 'application/json'
         }
       })
         .then((res) => {
           console.log('post success：', res.data, res.status);
         })
         .catch((err) => {
-          console.log('post err',err);
+          console.log('post err', err);
         });
     </script>
   </body>
