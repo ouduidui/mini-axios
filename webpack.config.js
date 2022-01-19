@@ -7,9 +7,6 @@ module.exports = {
     libraryTarget: 'umd',
     globalObject: 'this'
   },
-  node: {
-    process: false
-  },
   devtool: 'source-map',
   watch: true
 };
