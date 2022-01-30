@@ -886,7 +886,7 @@ module.exports = function dispatchRequest(config) {
 我们先来看看 [官方文档](https://axios-http.com/zh/docs/interceptors) 对拦截器的解释：
 
 > 在请求或响应被 then 或 catch 处理前拦截它们。
-> 
+>
 > ```javascript
 > // 添加请求拦截器
 > axios.interceptors.request.use(
@@ -899,7 +899,7 @@ module.exports = function dispatchRequest(config) {
 >     return Promise.reject(error);
 >   }
 > );
-> 
+>
 > // 添加响应拦截器
 > axios.interceptors.response.use(
 >   function (response) {
@@ -1381,18 +1381,18 @@ module.exports = function xhrAdapter(config) {
     request.onreadystatechange = function () {
       // ...
 
-        // 处理响应
-        settle(
-          (value) => {
-            resolve(value);
-            done();
-          },
-          (err) => {
-            reject(err);
-            done();
-          },
-          response
-        );
+      // 处理响应
+      settle(
+        (value) => {
+          resolve(value);
+          done();
+        },
+        (err) => {
+          reject(err);
+          done();
+        },
+        response
+      );
     };
 
     // ...
